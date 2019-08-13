@@ -1,5 +1,5 @@
 # HBONet
-Official implementation of our HBONet architecture as described in [HBONet: Harmonious Bottleneck on Two Orthogonal Dimensions](https://arxiv.org/abs/1908.03888) (ICCV'19) by [Duo Li](https://github.com/d-li14), Aojun Zhou and [Anbang Yao](https://github.com/yaoanbang) on ILSVRC2012 benchmark with [PyTorch](pytorch.org) framework.
+Official implementation of our HBONet architecture as described in [HBONet: Harmonious Bottleneck on Two Orthogonal Dimensions](https://arxiv.org/abs/1908.03888) (ICCV'19) by [Duo Li](https://github.com/d-li14), [Aojun Zhou](https://github.com/aojunzhou) and [Anbang Yao](https://github.com/yaoanbang) on ILSVRC2012 benchmark with [PyTorch](pytorch.org) framework.
 
 We integrate our HBO modules into the state-of-the-art MobileNetV2 backbone as a reference case. Baseline models of MobileNetV2 counterparts are available in my repository [mobilenetv2.pytorch](https://github.com/d-li14/mobilenetv2.pytorch).
 
