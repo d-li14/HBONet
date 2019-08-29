@@ -69,7 +69,7 @@ net.load_state_dict(torch.load('pretrained/hbonet_1_0.pth'))
 Configuration to reproduce our reported results, totally the same as [mobilenetv2.pytorch](https://github.com/d-li14/mobilenetv2.pytorch/blob/master/README.md#training) for fair comparison.
 
 * *batch size* 256
-* *epoch* 300
+* *epoch* 150
 * *learning rate* 0.05
 * *LR decay strategy* cosine
 * *weight decay* 0.00004
