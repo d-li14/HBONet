@@ -162,7 +162,7 @@ def main():
     if args.resume:
         if os.path.isfile(args.resume):
             print("=> loading checkpoint '{}'".format(args.resume))
-            checkpoint = torch.load(args.resume)
+            checkpoint = torch.load(args.resume, weights_only=True)
             args.start_epoch = checkpoint['epoch']
             best_prec1 = checkpoint['best_prec1']
             model.load_state_dict(checkpoint['state_dict'])
@@ -198,7 +198,7 @@ def main():
         from collections import OrderedDict
         if os.path.isfile(args.weight):
             print("=> loading pretrained weight '{}'".format(args.weight))
-            source_state = torch.load(args.weight)
+            source_state = torch.load(args.weight, weights_only=True)
             target_state = OrderedDict()
             for k, v in source_state.items():
                 if k[:7] != 'module.':
